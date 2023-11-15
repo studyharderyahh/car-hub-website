@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elisa Wu">
+    <meta name="ID" content="220005803">
+    <title>Relaxing And Enjoy The Game</title>
+    <link rel="stylesheet" href="CSSDesign/game.css">
+    
+    <style>
+        /* Style for the button */
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: rgba(76, 132, 175, 0.782);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #bac141;
+            
+        }
+    </style>
+    <script>
+        // JavaScript function to navigate to the home page
+        function goToHomePage() {
+            window.location.href = 'home.html';
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Game instructions and button to go to the home page -->
+    <div>
+        <button onclick="goToHomePage()">Click Me to Lead You To The Home Page!</button>
+        <h4>Watch Out!!!</h4>
+        <h5>Game Now Starts</h5>
+        <p>Move your mouse to control the position of your car.</p>
+        <p>Don't move your mouse into the glass area or over cars!</p>
+        <p>Ps: It's an easy and relaxing game, try it out!</p>
+    </div>
+    
+    <!-- Game environment setting-->
+    <div id="ground">
+        <div id="road">
+            <!-- road section -->
+            <div id="section-0"></div>
+            <div id="section-1"></div>
+            <div id="section-2"></div>
+            <div id="section-3"></div>
+            <div id="section-4"></div>
+            <div id="section-5"></div>
+            <div id="section-6"></div>
+            <div id="section-7"></div>
+            <div id="section-8"></div>
+            <div id="section-9"></div>
+            <div id="section-10"></div>
+            <div id="section-11"></div>
+
+            <!-- Player's car -->
+            <div id="car" class="car"></div>
+
+            <!-- Obstacles (other cars) on the road -->
+            <div id="obstacle-0" class="obstacle">
+                <div class="car blue"></div>
+            </div>
+            <div id="obstacle-1" class="obstacle">
+                <div class="car red"></div>
+            </div>
+            <div id="obstacle-2" class="obstacle">
+                <div class="car blue"></div>
+            </div>
+            <div id="obstacle-3" class="obstacle">
+                <div class="car blue"></div>
+            </div>
+            <div id="obstacle-4" class="obstacle">
+                <div class="car blue"></div>
+            </div>
+            <div id="obstacle-5" class="obstacle">
+                <div class="car blue"></div>
+            </div>
+            <div id="obstacle-6" class="obstacle">
+                <div class="car blue"></div>
+            </div>
+            <div id="obstacle-7" class="obstacle">
+                <div class="car blue"></div>
+            </div>
+            <div id="obstacle-8" class="obstacle">
+                <div class="car blue"></div>
+            </div>
+
+            <!-- Game over message -->
+            <div id="game-over">
+                <h1>Opps... Game Over!!</h1>
+                <p>
+                    Move Outside of this box to continue playing. <br>
+                    and then Re-enter the road (from top or bottom).<br>
+                    (Remember that the grass will kill you too!)
+                </p>
+                <hr>
+                <p>Remember to drive safely!</p>
+                <!-- Car Game code source from Heart Coding -->
+            </div>
+
+            <!-- Game start message -->
+            <div id="goMsg">Go! Go! Go!</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

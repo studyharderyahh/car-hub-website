@@ -1,0 +1,37 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    right: 10px;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.fa {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    color: goldenrod;
+}
+
+.copyright {
+    text-align: center;
+    color: #777;
+    /* Adjust color if needed */
+    font-size: 16px;
+    /* Adjust font size if needed */
+}
+
+.copyright:hover {
+    color: goldenrod;
+}

@@ -1,0 +1,80 @@
+/* General styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(244, 248, 251);
+}
+
+main {
+  padding: 20px;
+}
+
+#about {
+  padding: 20px;
+}
+
+.brief-history,
+.team-introduction,
+.mission-statement {
+  margin-bottom: 20px;
+}
+
+.brief-history h2,
+.team-introduction h2,
+.mission-statement h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.brief-history p,
+.team-introduction p,
+.mission-statement p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+.team-introduction img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 10px; /* Spacing below image */
+}
+
+.team-introduction img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.background-video {
+  position: fixed; /* Change to relative or remove this line */
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background-size: cover;
+  overflow: hidden;
+  pointer-events: none; /* Makes it non-interactive */
+}
+
+footer {
+  background-color: rgb(12, 55, 55);
+  padding: 5px;
+  margin: auto;
+}
+
+/* Add responsive behavior */
+@media (max-width: 600px) {
+  .team-introduction img {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height automatically to maintain aspect ratio */
+  }
+  
+}
+

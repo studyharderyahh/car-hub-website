@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #9ccaf7;
+    color: rgb(20, 20, 9); 
+}
+h1{
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+
+#News {
+    padding: 20px;
+    text-align: left; /* Align the section title to the left */
+}
+
+.car-news h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.car-news {
+    margin-bottom: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.news-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 50%; /* Circular images */
+    margin-right: 20px; /* Spacing between image and text */
+    max-width: 100%; /* Ensures images are responsive and do not stretch */
+    height: auto; /* Maintain aspect ratio */
+    width: 350px; /* Fixed width or you can set it to auto */
+}
+
+.news-text {
+    flex-grow: 1; /* Allows the text container to fill up the remaining space */
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.news-text p {
+    margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+.news-image {
+    margin-right: 20px; /* Spacing between image and text */
+}
+
+.news-item:hover .news-image {
+    transform: scale(1.03); /* Slightly increase the size of the image */
+    box-shadow: 0 6px 12px rgba(228, 186, 186, 0.3); /* Add a shadow for depth */
+}
+
+.news-item:hover .news-text {
+    background-color: #a6bff0; /* Change background color of the text area */
+}
+
+.news-item:hover .news-image {
+    /* Scale effect for the image */
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: rgb(12, 55, 55);
+    padding: 20px;
+    margin: auto;
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elisa Wu">
+    <meta name="ID" content="220005803">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Car Hub Contact Us</title>
+
+    <!--External CSS Design -->
+    <link rel="stylesheet" href="CSSDesign/index.css">
+    <link rel="stylesheet" href="CSSDesign/footer.css">
+    <link rel="stylesheet" href="CSSDesign/contactUs.css">
+    <!--External JavaScript Design -->
+    <script src="JavaScript/index.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#faqButn").click(function () {
+                $(".faqList").fadeToggle(500);
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <!-- header div -->
+    <div id="header"></div>
+
+    <!-- Navigation Bar -->
+    <div id="menu"></div>
+
+    <section class="contactSection">
+        <div class="contactBg">
+            <h3>Reach out to our Team</h3>
+            <h2>Contact Us</h2>
+
+            <div class="line">
+                <div id="l1"></div>
+                <div id="l2"></div>
+                <div id="l3"></div>
+            </div>
+            <p class="text">"Welcome to Car Hub's Contact Us page! We're here to help.</p>
+            <p>Got questions or feedback? Let's talk cars!"</p>
+        </div>
+
+        <div class="contactBody">
+            <br>
+            <h2>Ways to approach to us:</h2>
+            <!-- Cintact Information -->
+            <div class="contact-info">
+                <div>
+                    <span><i class="fa fa-mobile"></i></span>
+                    <span>Phone No.</span>
+                    <span class="text">+64 288-510-6269</span>
+                </div>
+                <div>
+                    <span><i class="fa fa-envelope-open"></i></span>
+                    <span>Email</span>
+                    <span class="text">carhub@fakemail.com</span>
+                </div>
+                <div>
+                    <span><i class="fa fa-map-marker"></i></span>
+                    <span>Address</span>
+                    <span class="text">759 Cook Street, Victoria Car Hub
+                        Auckland, 1010, New Zealand</span>
+                </div>
+                <div>
+                    <span><i class="fa fa-clock-o"></i></span>
+                    <span>Opening Hours</span>
+                    <span class="text">Monday - Saturday (10: 00 AM to 20: 00 PM) </span>
+                </div>
+            </div>
+            <hr>
+            <!-- Feedback section -->
+            <div class="row">
+                <div class="col-md-8">
+                    <h2>Leave a message to us:</h2>
+                    <div class="contact-form">
+                        <form class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="firstName" name="firstName"
+                                    placeholder="First name" required>
+                                <input type="text" class="form-control" id="lastName" name="lastName"
+                                    placeholder="Last name" required>
+                            </div>
+                            <!-- Don't want to scare the users, didn't put everything as required -->
+                            <div>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="E-mail"
+                                    required>
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"
+                                    required>
+                            </div>
+                            <div>
+                                <input type="color" class="form-control form-control-color" name="color"
+                                    value="#CCCCCC">
+                                <input type="text" class="form-control" placeholder="The type of car you like">
+                            </div>
+                            <p style="font-size: smaller;">Pick a colour above 'Me'
+                            </p>
+                            <textarea rows="5" class="form-control" id="comment" name="text"
+                                placeholder="Write down your thoughts"></textarea>
+                            <br>
+                            <div class="form-group form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember" required>
+                                    I agree you to contact back to me.
+                                </label>
+                            </div>
+                            <center><input type="submit" class="send-btn" value="send message"></center>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div>
+                        <br>
+                        <img src="Pictures/contactUs.jpg" alt="An Contact us picture" width="350px" height="400px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                (function () {
+                    'use strict'
+
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.querySelectorAll('.needs-validation')
+
+                    // Loop over them and prevent submission
+                    Array.prototype.slice.call(forms)
+                        .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                }
+
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                })()
+        </script>
+
+        <hr>
+
+        <!-- FAQ section -->
+        <section class="faqSection">
+            <h2>FAQ - Find the question you want to know:</h2>
+            <center><button id="faqButn">You can Toggle the FAQ below:</button></center>
+            <br>
+            <div class="faqList">
+                <ul>
+                    <li>
+                        <h3>What are the current trends in the automotive industry?</h3>
+                        <p>The automotive industry is experiencing a shift towards electric and hybrid vehicles,
+                            increased integration of AI and autonomous driving features, a focus on sustainable and
+                            eco-friendly practices, and a growing emphasis on connectivity and smart technology within
+                            vehicles.</p>
+                    </li>
+                    <li>
+                        <h3>How do I stay updated on the latest car trends?</h3>
+                        <p>Car Hub regularly features articles, blog posts, and updates on emerging trends in the
+                            automotive world. Follow our platform, subscribe to newsletters, and engage with our social
+                            media channels to stay informed about the latest trends.</p>
+                    </li>
+                    <li>
+                        <h3>What is Car Hub and what does it offer?</h3>
+                        <p>Car Hub is a comprehensive online resource dedicated to all things related to cars. We
+                            provide a wealth of information about various car models, their history, technology,
+                            maintenance tips, and the latest industry trends. Our goal is to connect and engage a global
+                            community of car enthusiasts, catering to everyone from seasoned professionals to novice car
+                            lovers.</p>
+                    </li>
+                    <li>
+                        <h3>How can Car Hub benefit me as a car enthusiast or owner?</h3>
+                        <p>Car Hub offers a one-stop platform for car enthusiasts, providing a range of resources, from
+                            in-depth articles on car culture to maintenance tips and advice for car owners. Whether
+                            you're seeking information on your next car purchase, looking to learn more about your
+                            current vehicle, or simply exploring your passion for cars, Car Hub aims to be your go-to
+                            resource.</p>
+                    </li>
+                    <li>
+                        <h3>How can I find specific information about a particular car model on Car Hub?</h3>
+                        <p>You can use our search bar to look for specific car models or browse our categories to find
+                            articles, reviews, and discussions related to your desired car make and model.</p>
+                    </li>
+                    <li>
+                        <h3>Is there a membership or subscription required to access Car Hub's content?</h3>
+                        <p>Car Hub is a free resource. All our content is accessible without any membership or
+                            subscription fees. Simply explore and enjoy the information and resources available on the
+                            website..</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <hr>
+        <h2>Find us here!</h2>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.647237831925!2d174.7547859758398!3d-36.850923679626774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d47ede0acc2df%3A0xfcd8e469927a64b6!2sCook%20Street%2C%20Auckland%20CBD%2C%20Auckland%201010!5e0!3m2!1sen!2snz!4v1699653205119!5m2!1sen!2snz"
+                width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <br>
+        <footer></footer>
+    </section>
+</body>
+
+</html>

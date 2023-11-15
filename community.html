@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Car Hub Community</title>
+
+    <!-- External CSS Design -->
+    <link rel="stylesheet" href="CSSDesign/index.css">
+    <link rel="stylesheet" href="CSSDesign/community.css">
+    <link rel="stylesheet" href="CSSDesign/footer.css">
+
+    <!-- External JavaScript Design -->
+    <script src="JavaScript/index.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Toggle for main Table of Contents
+            $("#toggleToc").click(function() {
+                $("#tocContent").toggle("fast");
+            });
+
+            // Toggle for street drifts and powerslides Table of Contents
+            $("#toggleStreetDriftsToc").click(function() {
+                $("#streetDriftsToc").toggle("fast");
+            });
+
+            // Toggle for drag racing Table of Contents
+            $("#toggleDragRacingToc").click(function() {
+                $("#dragRacingToc").toggle("fast");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- header div -->
+    <div id="header"></div>
+    <!-- Navigation Bar -->
+    <div id="menu"></div>
+
+    <main class="container">
+        <h1 class="text-center my-4" style="font-weight: bold;">Community</h1>
+
+        <section class="community-description">
+            <!-- Existing community description -->
+            <p>"Our community is a unique and vibrant space where the heart and soul of automotive culture come to life.
+                Here, cars aren't just machines; they're the pulsating heart of a passionate community, a symbol of
+                innovation, design, and the relentless pursuit of perfection. We delve deep into the intricacies of
+                automotive engineering, design, and history, offering an immersive experience for enthusiasts and
+                newcomers alike.</p>
+            <p>Our community isn't just about cars; it's about the people who love them. It's a place to forge
+                connections, share knowledge, and celebrate the joy and excitement that cars bring to our lives. We
+                welcome everyone, from seasoned collectors to those who've just discovered their passion for cars, to
+                join us in this journey of discovery and celebration."</p>
+        </section>
+
+        <div class="videos-section">
+            <!-- Adjusted content-container for first video -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="video-wrapper">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/lEHgjET-lTw?si=GmxCKH8ay5VO8b5Q"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="toc-wrapper" id="tocContent">
+                        <h2>Table of Contents</h2>
+                        <p>1. Don't Be a Pathological Liar</p>
+                        <p>2. Don't Try to Guess Something You Don't Know</p>
+                        <p>3. Don't Be Stuck up</p>
+                        <p>4. Gatekeeping</p>
+                        <p>5. Don't Be Egotistical</p>
+                        <p>6. Finding Car Guys</p>
+                        <p>7. Young Car Enthusiasts</p>
+                    </div>
+                </div>
+            </div>
+            <button id="toggleToc" class="btn btn-primary my-3">Toggle Table of Contents</button>
+            <hr>
+            <!-- First additional content-container -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="video-wrapper">
+                        <!-- Add new video or content here -->
+                        <iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/zKDMZ5XCios?si=MUFdY18FUQzpqBxP&amp;start=52"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="toc-wrapper" id="streetDriftsToc">
+                        <!-- Add new table of contents or content here -->
+                        <h2>A compilation about the best Street Drifts & Powerslides</h2>
+                        <p>Audi R8</p>
+                        <p>BMW E30 Touring, M2 Competition, M3, M4, M5</p>
+                        <p>Ferrari F430 Scuderia, LaFerrari Aperta</p>
+                        <p>Honda S2000</p>
+                        <p>Lexus IS200 Turbo</p>
+                        <p>Mazda RX8</p>
+                        <p>Mercedes AMG C63S, CLS63 AMG</p>
+                        <p>Nissan GTR, Silvia, Skyline Widebody</p>
+                        <p>Toyota Chaser, Mark II, Supra</p>
+                    </div>
+                </div>
+            </div>
+            <button id="toggleStreetDriftsToc" class="btn btn-primary my-3">Toggle Street Drifts TOC</button>
+
+            <hr>
+
+            <!-- Second additional content-container -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="video-wrapper">
+                        <iframe width="100%" height="315"
+                            src="https://www.youtube.com/embed/LHV4eJtHhEQ?si=-asasuyyU-_cPnje&amp;start=8"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="toc-wrapper" id="dragRacingToc">
+                        <!-- Add new table of contents or content here -->
+                        <h2>Check Pout this insane drag racers!</h2>
+                        <p>Honda Civic Turbo, Integra Type R</p>
+                        <p>Mazda RX7 3 Rotor Turbo, RX8 Turbo</p>
+                        <p>Mitsubishi 3000GT, Lancer Evo</p>
+                        <p>Nissan 350Z Turbo, GTR, MX3, Silvia RB26 Big Turbo Dragster, Skyline GTR, Stagea 260RS</p>
+                        <p>Subaru Impreza WRX STI</p>
+                        <p>Toyota Celica GT Four, MR2 Turbo, Soarer, Supra</p>
+                        <p>Volkswagen Beetle 13B Turbo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="toggleDragRacingToc" class="btn btn-primary my-3 text-center">Toggle Drag Racing TOC</button>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

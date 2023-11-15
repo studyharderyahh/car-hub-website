@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Car Hub Car Collections</title>
+
+    <!--External CSS Design -->
+    <link rel="stylesheet" href="CSSDesign/carCollection.css">
+    <link rel="stylesheet" href="CSSDesign/index.css">
+    <link rel="stylesheet" href="CSSDesign/footer.css">
+
+    <script src="JavaScript/index.js"></script>
+    <script src="JavaScript/carCollection.js"></script>
+
+</head>
+
+<body>
+    <!-- header div -->
+    <div id="header"></div>
+    <!-- Navigation Bar -->
+    <div id="menu"></div>
+
+    <section id="carCollections">
+        <h3>Car Collections</h3>
+        <div class="collection container">
+            <h5>Welcome to our Car Collections!</h5>
+            <p>Here, the world of automobiles comes to life. Explore an exclusive gallery of stunning cars contributed
+                by our community and passionate collectors. Each image tells a unique story,
+                inviting you into the diverse and captivating realm of vehicles.
+                Whether classic, exotic, or modern, find beauty in every detail captured in these photographs.</p>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent" class="content"></div>
+        </div>
+    </div>
+
+    <section id="carGallery">
+        <h3>Car Gallery</h3>
+        <h5>Enjoy to Dive into the Car knowledge sea~</h5>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow" style="width: 20">
+                        <img src="Pictures/carLibrary/MK4Supra.jpg" alt="This is a photo about MK4 Supra"
+                            class="car-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Historical Overview:</h5>
+                            <p class="card-text">The Toyota GR Supra is a sports car produced by Toyota since 2019. The
+                                fifth-generation Supra, the GR Supra was sold
+                                under and developed by Toyota Gazoo Racing (TGR) brand in collaboration with BMW.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="btn btn-primary" onclick="showModal('mk4supra')">Click to learn more</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow" style="width: 20">
+                        <img src="Pictures/carLibrary/NissanGTR.jpg" alt="This is a photo about Nissan GTR"
+                            class="car-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Historical Overview:</h5>
+                            <p>The Nissan GT-R, colloquially known as "Godzilla", has evolved from its roots in the
+                                Nissan Skyline lineage and stands as one of Japan's legendary performance cars.
+
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="btn btn-primary" onclick="showModal('nissangtr')">Click to learn more</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow" style="width: 20">
+                        <img src="Pictures/carLibrary/Shelby.jpg" alt="This is a photo about Shelby GT500"
+                            class="car-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Historical Overview:</h5>
+                            <p>The Shelby GT500 was birthed from the collaboration between Ford and race car
+                                driver turned car designer, Carroll Shelby. This partnership aimed to create
+                                high-performance versions of the popular Ford Mustang.
+                                <br>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="btn btn-primary" onclick="showModal('shelby')">Click to learn more</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow" style="width: 20">
+                        <img src="Pictures/carLibrary/Mazda.jpg" alt="This is a photo about Mazda RX-7 (FD)"
+                            class="car-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Historical Overview:</h5>
+                            <p>The RX-7 (FD) is the third and final generation of Mazda's RX-7 series, introduced in
+                                1992.It's known for its sleek, curvaceous body and twin-turbo rotary engine.
+                                The FD underwent several minor revisions during its lifetime,
+                                with improvements to its engine, suspension, and aesthetics until the end of its
+                                production in 2002.
+
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="btn btn-primary" onclick="showModal('mazda')">Click to learn more</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow" style="width: 20">
+                        <img src="Pictures/carLibrary/lamborghini.png" alt="This is a photo about Lamborghini Countach"
+                            class="car-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Historical Overview:</h5>
+                            <p>The Countach burst onto the scene at the 1971 Geneva Motor Show, instantly grabbing
+                                attention and setting the automotive world abuzz.
+                                Crafted between 1974 and 1990, the Countach experienced several iterations, each adding
+                                to its allure. The Countach was the dream car for many during the '70s and '80s,
+                                inspiring a generation of car enthusiasts.
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="btn btn-primary" onclick="showModal('lamborghini')">Click to learn more
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow" style="width: 20">
+                        <img src="Pictures/carLibrary/chevrolet.jpg" alt="This is a photo about Chevrolet Corvette"
+                            class="car-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Historical Overview:</h5>
+                            <p>Introduced in 1963, the C2 represented the second generation of the Chevrolet Corvette,
+                                replacing the C1. It spanned production years from 1963 to 1967.Within its production
+                                years,the C2 offered both a coupe and convertible variant, with the split-window coupe
+                                in 1963
+                                being particularly noteworthy.
+                                <br>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <div class="btn btn-primary" onclick="showModal('chevrolet')">Click to learn more</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carLibrary">
+        <h3>Car Library</h3>
+        <div class="grid">
+            <div class="library-item">
+                <h4>Featured Car of the Month</h4>
+                <p>The featured car of the month is a unique vehicle that we shine a spotlight on every month.
+                    You can delve into its history, distinct features, and the significance it holds in the automotive
+                    world.
+                    From vintage classics to contemporary marvels, get an in-depth look at what makes these cars
+                    exceptional.</p>
+                <img src="Pictures/carLibrary/miata.jpg" alt="This is a picture of Miata">
+                <br>
+                <a href="newsAndInsight.html">Are you ready to leanr more!</a>
+            </div>
+
+            <div class="library-item">
+                <h4>Amazing moment</h4>
+                <p>"Immerse yourself in the dynamic world of automobiles through our engaging videos and captivating
+                    photographs. These visual narratives bring the vehicular lifestyle to your screen, showcasing the
+                    thrill, craftsmanship, and artistry that define each unique vehicle.</p>
+                <video autoplay loop muted plays-inline width="500px" height="550px">
+                    <source src="/Pictures/pexels-ruvim-miksanskiy-5893890 (1080p).mp4" type="video/mp4">
+                </video>
+                <a href="community.html">Come on, let's leanr more!</a>
+            </div>
+            <div class="library-item">
+                <h4>Other Resources</h4>
+                <p>Beyond the glamour and beauty, find practical resources for every car enthusiast. Discover
+                    comprehensive guides, essential maintenance tips, and a diverse array of reference materials. Dive
+                    into eBooks curated specifically for car aficionados, offering in-depth insights and knowledge at
+                    your fingertips.</p>
+                <h4>Free resources below<br>
+                    Reading to receive the knowledge:</h4>
+                <br>
+                <div>
+                    <i class="fa fa-book" style="font-size: 40px;"></i>
+                    <a href="PDFdoc/DEFININGLUXURYCARS1.pdf" target="_blank">Defining Luxury Cars</a>
+                </div>
+                <br>
+                <div>
+                    <i class="fa fa-book" style="font-size: 40px;"></i>
+                    <a href="PDFdoc/ivas101.pdf" target="_blank">History and Evolution of Automobiles</a>
+                </div>
+                <br>
+                <div>
+                    <i class="fa fa-book" style="font-size: 40px;"></i>
+                    <a href="PDFdoc/Crawfords_Auto_Repair_Guide.pdf" target="_blank">Car Repair Guideline</a>
+                </div>
+                <br>
+                <div>
+                    <i class="fa fa-book" style="font-size: 40px;"></i>
+                    <a href="PDFdoc/Classic_Car_Collector_Passion_Investment_Study_On_.pdf" target="_blank">Classic Car
+                        Collector Passion for Investment</a>
+                </div>
+                <p style="font-size: small; font-weight:bold;">Not enough for you? Please leave a message in Contact Us, let us know the resources you are looking for!</p>
+
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+</body>
+
+
+
+</html>

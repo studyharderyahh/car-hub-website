@@ -1,0 +1,181 @@
+/* CSS Design written by Elisa Wu, Student ID: 220005803 */
+/* Adjust the carousel position and body padding */
+#main-carousel {
+    position: relative;
+    top: 0;
+    /* Move the carousel behind other elements */
+    z-index: -1; 
+}
+
+.carousel-inner {
+    margin-top: 0; 
+}
+
+.carousel-item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    font-size: 2em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #343a40;
+}
+
+.carousel-control-prev {
+    left: 2%;
+}
+
+.carousel-control-next {
+    right: 2%;
+}
+
+.main-section {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #87ecdd;
+}
+
+.main-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.main-section p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 80px 0;
+    background-color: rgba(247,247,247,255);
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    color: #343a40;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.square-container {
+    background-color: #91beea; 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+     /* Add a subtle box shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.388);
+}
+
+.content-container {
+    text-align: center;
+}
+
+.square-container h3 {
+    color: #343a40; 
+}
+
+.square-container p {
+    color: #6c757d; 
+}
+
+.car-element {
+    padding: 20px;
+    background-color: #062a50; 
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.car-element i {
+    margin-right: 10px;
+}
+
+.square-container {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.square-container:hover {
+    transform: scale(1.05);
+}
+
+/* Car Gallery Section Styles */
+
+#car-gallery {
+    background-color: rgb(87, 147, 170);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#car-gallery h2 {
+    color: #343a40;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Community Section */
+#community {
+    background-color: rgb(87, 147, 170);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#community h2 {
+    color: #343a40;
+}
+
+#community p {
+    color: #6c757d;
+}
+
+.community-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.community-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Us Section */
+#contact-us {
+    background-color: rgb(87, 147, 170);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact-us h2 {
+    color: #343a40;
+}
+
+#contact-us p {
+    color: #6c757d;
+}
+
+footer {
+    background-color: rgb(12, 55, 55);
+    padding: 20px;
+    margin: auto;
+}

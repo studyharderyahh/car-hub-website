@@ -1,0 +1,230 @@
+/* CSS Design written by Elisa Wu, Student ID: 220005803 */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+
+h2{
+    text-align: center;
+}
+
+/* styles for Contact background */
+.contactBg{
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../Pictures/AListOfCars.jpeg);
+    background-position: 10% 10%;
+    /* flex properties are used for centering content both vertically and horizontally. */
+    background-attachment: fixed;
+    text-align: center;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactBg h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.contactBg h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem, 0;
+    letter-spacing: 4px;
+}
+
+.line div{
+    margin: 0 0.2rem;
+}
+
+/* #l1 and #l3 are horizontal lines
+ while #l2 is a circular dot. */
+#l1, #l3{
+    height: 3px;
+    width: 70px;
+    background: sandybrown;
+    border-radius: 5px;
+}
+#l2{
+    height: 10px;
+    width: 10px;
+    background: sandybrown;
+    border-radius: 50%;
+}
+.line{
+    display: flex;
+    text-align: center;
+}
+.text{
+    font-weight: 300;
+    /* set the transparency of an element */
+    opacity: 0.9;
+    /*  the element is mostly opaque 
+    but still allows 10% of the background to show through */
+}
+
+.contactBg .text{
+    margin: 1.6rem 0;
+}
+
+.contactBody{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contact-info{
+    margin: 1.5rem 0;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.contact-info span{
+    display: block;
+}
+
+.contact-info div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+
+.contact-info span .fa{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: rgb(211, 164, 47);
+}
+
+.contact-info .text{
+    margin-top: 0.4rem;
+}
+
+/* Contact form style */
+.contact-form form{
+    padding-bottom: 1rem;
+}
+
+.contact-form .form-control{
+    width: 100%;
+    border: 1.5px solid rgb(244, 216, 192);
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    /* remove the default focus outline that browsers apply to focused elements */
+    outline: 0;
+}
+
+.contact-form .form-control:focus{
+    box-shadow: 0 0 6px -3px sandybrown;
+}
+
+.contact-form form div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.6rem;
+}
+
+.send-btn{
+    align-items: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(235, 228, 215);
+    background: goldenrod;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+}
+
+.send-btn:hover {
+    background-color: rgb(13, 132, 243);
+}
+
+/* FAQ Style Design */
+.faqSection {
+    padding: 20px;
+}
+
+.faqList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.faqList li {
+    margin-bottom: 20px;
+}
+
+.faqList h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.faqList p {
+    font-size: 1.1rem;
+    /* each line of text within the specified element will have 
+    a height of 1.7 times the size of the element's font size */
+    line-height: 1.7rem;
+}
+
+#faqButn{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: white;
+    background: goldenrod;
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+}
+
+#faqButn:hover {
+    background-color: rgb(3, 119, 94);
+}
+
+
+/* Media code for responsive design */
+@media screen and (min-width: 768px){
+    .contactBg .text{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (min-width: 992px){
+    .contactBg .text{
+        width: 50;
+    }
+
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    } 
+}
+
+@media screen and (min-width: 1200px){
+    .contact-info{
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    } 
+}
+
+footer {
+    background-color: rgb(12, 55, 55);
+    padding: 20px;
+    margin: auto;
+}
